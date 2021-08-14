@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react';
-import useSWR from 'swr';
+
 import ReactPlayer from 'react-player';
 import { useRouter } from 'next/router';
 import { setTimeout } from 'timers';
