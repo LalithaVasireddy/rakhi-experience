@@ -16,10 +16,9 @@ const sleep = (milliseconds) => {
 		const [queryParam, setQueryParam] = useState({});			
 		const [GaveBlessing, setGaveBlessing] = useState(false);
 
-		let youTubeUrl = "https://www.youtube.com/watch?v=iplZGpP2VO0";
-		if(router.query.lan === 'eng') 
-			youTubeUrl = "https://www.youtube.com/watch?v=iplZGpP2VO0"
-		else if(router.query.lan == "tam")
+		var youTubeUrl = "https://www.youtube.com/watch?v=iplZGpP2VO0";
+		
+		if(router.query.lan == "tam")
 			youTubeUrl = "https://www.youtube.com/watch?v=vRiPWGono4s";
 		else if(router.query.lan == "hin")
 			youTubeUrl = "https://www.youtube.com/watch?v=IIbBI-BT9c4";
@@ -75,7 +74,7 @@ const sleep = (milliseconds) => {
 										width="100%"
 										height="100%"
 										playing
-										onProgress={handleGaveBlessing}									
+										onProgress={handleGaveBlessing}
 										/>
 									</div>
 									<br></br>
